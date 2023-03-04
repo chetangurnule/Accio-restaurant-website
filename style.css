@@ -97,7 +97,7 @@ html{
 @media(max-width:1070px){
     .section-1-content{
         position: absolute;
-        top: 150px;
+        top: 100px;
         left: 50px;
         z-index: 999;
         color: #fff;
