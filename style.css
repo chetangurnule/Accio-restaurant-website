@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ruda', sans-serif;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+}
+/* navbar */
+.navbar{
+    background-color: #000 !important;
+    padding: 1rem 1rem;
+    width: 100%;
+}
+.navbar-brand{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.navbar-brand:hover{
+    color: #ddd !important;
+    
+}
+.navbar-toggler{
+    background-color: #fff;
+}
+.navbar-nav{
+    margin: 0 auto ;
+}
+.navbar-nav .nav-item a{
+    font-size: 1.4rem;
+    margin: 0 1.5rem;
+    color: #fff;
+}
+.navbar-nav .nav-item a:hover{
+    color: #ddd;
+}
+.social .social-img{
+    display: inline-block;
+    /* border: 2px solid red; */
+    width: 40px;
+    margin: 0 0.5rem;
+}
+.social .social-img img{
+    width: 100%;
+}
+/* *************background image*************** */
+.main-content{
+    padding: 1rem;
+    background-color: #000;
+}
+.back-img{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.back-img img{
+    display: block;
+    width: 100%;
+    height: 97vh;
+    object-fit: cover;
+     object-position: left;
+   
+}
+.main-content-content{
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    z-index: 999;
+    color: #fff;
+    width: 40%;
+    /* border: 2px solid black; */
+}
+.main-content-content-h1 h1{
+    font-size: 5rem;
+    text-align: left;
+}
+.main-content-line{
+    width: 400px;
+    max-width: 100%;
+    height: 10px;
+    background-color: rgba(242, 76, 76, 1); 
+    margin: 4rem 0;
+}
+.main-content-content-p{
+    color: #fff;
+    width: 80%;
+    /* border: 2px solid black; */
+}
+.main-content-content-p p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+/* **********main-content-responsive********* */
+@media(max-width:1070px){
+    .main-content-content{
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        z-index: 999;
+        color: #fff;
+        width: 50%;
+        /* border: 2px solid black; */
+    }
+    .main-content-content-h1 h1{
+        font-size: 4rem;
+        text-align: left;
+    }
+}
+@media(max-width:780px){
+    .main-content-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 999;
+        color: #fff;
+        width: 70%;
+        /* border: 2px solid black; */
+        transform: translate(-50%,-50%);
+    }
+    .main-content-content-h1 h1{
+        font-size: 5rem;
+        text-align: center;
+    }
+    .main-content-content-p{
+        color: #fff;
+        width: 80%;
+        display: none;
+        /* border: 2px solid black; */
+    }
+    .main-content-line{
+        display: none;
+    }
+}
+/* **************about-us************* */
+.about-us{
+    padding-top: 6rem;
+    background-color: #000;
+}
+.about-us h2{
+    font-size: 5rem;
+    padding: 3rem 0;
+    color: #fff;
+}
+.about-us h2::after{
+    content: "";
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    border: 3px solid rgba(242, 76, 76, 1);
+    margin: 0 auto;
+}
+.about-us-p::before{
+    content: "";
+    display: block;
+    width: 350px;
+    border: 2px solid rgba(242, 76, 76, 1);
+    /* margin: 0 auto; */
+}
+.about-us-p p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.about-us .about-us-div img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* *******responsive about-us********* */
+@media(max-width:991px){
+    .about-us-p{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-us-p::before{
+        content: "";
+        display: block;
+        width: 100%;
+        border: 2px solid rgba(242, 76, 76, 1);
+        margin: 2rem 0;
+    }
+    .about-us .about-us-div{
+        width: 90%;
+    }
+}
+
+/* ***********menu************* */
+.menu{
+    background-color: #000;
+    color: #fff;
+    padding-top: 6rem;
+}
+.menu h2{
+    margin: 2rem 0;
+    font-size: 5rem;
+}
+.menu h2::after{
+    content: "";
+    display: block;
+    width: 200px;
+    border: 2px solid rgba(242, 76, 76, 1);
+    margin: 1rem auto;
+}
+.menu h3{
+    font-size: 1.6rem;
+    color: rgba(242, 201, 76, 1);
+    text-align: center;
+}
+/* **************responsive menu************** */
+@media(max-width:991px){
+    .menu .inside-row h3{
+        margin: 2rem 0;
+    }
+    .menu .inside-row p{
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+    }
+}
+/* ***************find-us***************** */
+.find-us{
+    background-color: #000;
+    padding: 6rem 0;
+}
+.find-us h2{
+    padding: 1rem 0;
+    font-size: 5rem;
+    color: #fff;
+}
+.find-us h2::after{
+    content: "";
+    display: block;
+    width: 250px;
+    border: 2px solid rgba(242, 76, 76, 1);
+    margin: 1rem auto;
+}
+.find-us-div-1 p{
+   margin-top: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.find-us img{
+    margin: 1rem 0;
+}
+.find-us .img p{
+    font-size: 1.6rem;
+    color: #fff;
+    display: inline-block;
+    margin-left: 2rem;
+}
+.find-us .img-1{
+    position: relative;
+}
+.find-us .img-1 .oval-2{
+    position: absolute;
+    top: 10px;
+    left: 11.5px;
+}
+/* **************responsive find-us************** */
+@media(max-width:991px){
+    .find-us-div-1 {
+       width: 70%;
+       margin: 0 auto;
+     }
+     .find-us .find-us-div-2{
+        width: 80%;
+        margin: 0 auto;
+     }
+     .find-us .find-us-div-2 img{
+        width: 100%;
+     }
+}
+@media(max-width:450px){
+    .find-us-div-1 {
+       width: 90%;
+       margin: 0 auto;
+     }
+     .find-us .find-us-div-2{
+        width: 90%;
+        margin: 0 auto;
+     }
+     .find-us .find-us-div-2 img{
+        width: 100%;
+     }
+}
+
+/* *********footer**************** */
+footer{
+    background-color: #000;
+}
+footer .footer-div-1{
+    /* border: 2px solid red; */
+    position: relative;
+    /* width: 400px; */
+    height: 200px;
+}
+footer .footer-div-1 .vector-1{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+footer .footer-div-1 .vector-2{
+    position: absolute;
+    top: 40px;
+    left: 110px;
+}
+footer .footer-div-1 .vector-3{
+    position: absolute;
+    top: 60px;
+    left: 140px;
+}
+footer .footer-div-1 .vector-4{
+    position: absolute;
+    top: 45px;
+    left: 50px;
+}
+footer .footer-div-1 .vector-5{
+    position: absolute;
+    top: 27px;
+    left: 42px;
+}
+footer .footer-2{
+    /* border: 2px solid red; */
+    position: relative;
+    height: 200px;
+}
+footer .footer-2 p{
+    font-size: 1.6rem;
+    color: #fff;
+}
+footer .footer-2 .path-1{
+    position: absolute;    
+    top: 40px;
+    left: 120px;
+}
+footer .footer-2 .path-2{
+    position: absolute;
+    top: 55px;
+    left: 155px;
+}
+footer .footer-2 .path-3{
+    position: absolute;
+    top: 56.5px;
+    left:123px;
+}
+footer .footer-2 .path-4{
+    position: absolute;
+    top: 40px;
+    left: 120px;
+}
+footer .footer-2 .mail p{
+    position: absolute;
+    top: 50px;
+    left: 225px;
+}
+footer .footer-2 .phone{
+    margin-top: 90px;
+    margin-left: 120px;
+}
+footer .footer-2 .phone p{
+    display: inline-block;
+    margin-left: 50px;
+}
+/* ************footer responsive************* */
+@media(max-width:745px){
+    footer .footer-div-1{
+        width: 45%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+    footer .footer-2{
+        width: 55%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+    footer .footer-div-1 .vector-1{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    footer .footer-div-1 .vector-2{
+        position: absolute;
+        top: 40px;
+        left: 110px;
+    }
+    footer .footer-div-1 .vector-3{
+        position: absolute;
+        top: 60px;
+        left: 140px;
+    }
+    footer .footer-div-1 .vector-4{
+        position: absolute;
+        top: 45px;
+        left: 50px;
+    }
+    footer .footer-div-1 .vector-5{
+        position: absolute;
+        top: 27px;
+        left: 42px;
+    }
+    footer .footer-2 .path-1{
+        position: absolute;    
+        top: 40px;
+        left: 40px;
+    }
+    footer .footer-2 .path-2{
+        position: absolute;
+        top: 55px;
+        left: 75px;
+    }
+    footer .footer-2 .path-3{
+        position: absolute;
+        top: 56.5px;
+        left:43px;
+    }
+    footer .footer-2 .path-4{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    footer .footer-2 .mail p{
+        position: absolute;
+        top: 50px;
+        left: 135px;
+    }
+    footer .footer-2 .phone{
+        margin-top: 90px;
+        margin-left: 40px;
+    }
+    footer .footer-2 .phone p{
+        display: inline-block;
+        margin-left: 40px;
+    }
+}
+@media(max-width:510px){
+    footer .footer-div-1{
+        width: 60%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+    footer .footer-2{
+        width: 60%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+}
+@media(max-width:470px){
+    footer .footer-div-1{
+        width: 70%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+    footer .footer-2{
+        width: 75%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+}
+@media(max-width:370px){
+    footer .footer-div-1{
+        width: 80%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+    footer .footer-2{
+        width: 100%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+    footer .footer-div-1 .vector-1{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    footer .footer-div-1 .vector-2{
+        position: absolute;
+        top: 40px;
+        left: 110px;
+    }
+    footer .footer-div-1 .vector-3{
+        position: absolute;
+        top: 60px;
+        left: 140px;
+    }
+    footer .footer-div-1 .vector-4{
+        position: absolute;
+        top: 45px;
+        left: 50px;
+    }
+    footer .footer-div-1 .vector-5{
+        position: absolute;
+        top: 27px;
+        left: 42px;
+    }
+    footer .footer-2 .path-1{
+        position: absolute;    
+        top: 40px;
+        left: 40px;
+    }
+    footer .footer-2 .path-2{
+        position: absolute;
+        top: 55px;
+        left: 75px;
+    }
+    footer .footer-2 .path-3{
+        position: absolute;
+        top: 56.5px;
+        left:43px;
+    }
+    footer .footer-2 .path-4{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    footer .footer-2 .mail p{
+        position: absolute;
+        top: 50px;
+        left: 135px;
+    }
+    footer .footer-2 .phone{
+        margin-top: 90px;
+        margin-left: 40px;
+    }
+    footer .footer-2 .phone p{
+        display: inline-block;
+        margin-left: 40px;
+    }
+}
